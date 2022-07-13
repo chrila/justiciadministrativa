@@ -1,7 +1,7 @@
 :root {
   /* variables */
   /* colors */
-  --primary-color-rgb: 207,244,252;
+  --primary-color-rgb: 110,223,246;
   --primary-color: rgb(var(--primary-color-rgb));
   --secondary-color-rgb: 241,161,227;
   --secondary-color: rgb(var(--secondary-color-rgb));
@@ -108,4 +108,21 @@ footer {
 
 .navbar-brand {
   font-size: 2rem;
+}
+
+.page-cover {
+  background-image: url(../img/justice-bg.jpg);
+  background-size:cover;
+  height: 25rem;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  word-wrap: break-word;
+}
+
+.title-text-item {
+  background-color: black;
 }
