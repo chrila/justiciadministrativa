@@ -3,6 +3,39 @@ body {
 }
 
 section {
-  margin-top: 2rem;
+  margin-top: 3.5rem;
   margin-bottom: 2rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.contact-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bg-color-light {
+  background-color: #cff4fc !important;
+}
+
+.btn {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #cff4fc;
+  color: black;
+  border-color: black;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  border-color: black;
+}
+
+.footer-text-body {
+  padding-bottom: 6rem;
 }
