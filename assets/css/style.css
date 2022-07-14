@@ -8,10 +8,6 @@
   --tertiary-color-rgb: 50,85,127;
   --tertiary-color: rgb(var(--tertiary-color-rgb));
 
-  /* overriding of bootstrap color variables */
-/*  --bs-light: var(--primary-color);
-  --bs-light-rgb: var(--primary-color-rgb);*/
-
   /* h2 underlining */
   --underline-intrinsic-width: 8;
   --underline-width: 12;
@@ -150,4 +146,9 @@ footer {
 
 .title-text-item {
   background-color: black;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 .25rem rgba(var(--primary-color-rgb),.45);
 }
