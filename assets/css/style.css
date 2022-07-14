@@ -3,15 +3,14 @@
   /* colors */
   --primary-color-rgb: 110,223,246;
   --primary-color: rgb(var(--primary-color-rgb));
-  --secondary-color-rgb: 241,161,227;
+  --secondary-color-rgb: 110,223,246;
   --secondary-color: rgb(var(--secondary-color-rgb));
   --tertiary-color-rgb: 50,85,127;
   --tertiary-color: rgb(var(--tertiary-color-rgb));
 
   /* overriding of bootstrap color variables */
-  --bs-light: var(--primary-color);
-  --bs-light-rgb: var(--primary-color-rgb);
-  --bs-btn-bg: var(--secondary-color);
+/*  --bs-light: var(--primary-color);
+  --bs-light-rgb: var(--primary-color-rgb);*/
 
   /* h2 underlining */
   --underline-intrinsic-width: 8;
@@ -70,7 +69,7 @@ p {
 }
 
 
-.nav-link {
+a {
   text-decoration: none;
   /*box-shadow: inset 0 -2px 0 rgba(50,85,127,0.5), 0 2px 0 rgba(50,85,127,0.5);*/
   transition: box-shadow .3s;
@@ -79,9 +78,13 @@ p {
   text-transform: uppercase;
 }
 
-.nav-link:hover {
-  box-shadow: inset 0 -40px 0 var(--secondary-color), 0 2px 0 var(--tertiary-color);
+a:hover {
+  box-shadow: inset 0 -40px 0 rgba(var(--secondary-color-rgb), 0.5), 0 2px 0 var(--tertiary-color);
   transition: box-shadow .3s;
+}
+
+a.nav-link.active {
+  box-shadow: inset 0 -40px 0 rgba(var(--secondary-color-rgb), 0.5), 0 2px 0 var(--tertiary-color);
 }
 
 .contact-item-container {
@@ -106,6 +109,7 @@ p {
 }
 
 .footer-text-body {
+  padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
